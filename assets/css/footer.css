@@ -1,16 +1,8 @@
 /* reser some defautl styles */
-body, h1,h2, p, ul, li{
-    margin: 0;
-    padding: 0;
-
-}
-
 .footer{
     background-color: #333;
     color: #fff;
     text-align: center;
     padding:10px;
-    position: fixed;
-    bottom: 0;
     width: 100%;
 }

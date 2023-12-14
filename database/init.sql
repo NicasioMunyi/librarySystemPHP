@@ -40,6 +40,10 @@ CREATE TABLE BorrowedBooks(
     FOREIGN KEY (UserID) REfERENCES Users(UserID),
     FOREIGN KEY (BookID) REFERENCES Books(BookId)
     );
+
+    -- alter the books table to allow image storage
+
+ALTER TABLE Books ADD COLUMN PicturePath VARCHAR(255);
         
 
     
