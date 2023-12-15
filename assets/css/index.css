@@ -20,7 +20,36 @@ h2{
     color: #333;
 }
 .main{
-    width: 100%;
-    height: 95%;
-    background-color: bisque;
+    overflow: scroll;
+    width: 97%;
+    height:98%;
+    background-color: rgb(240, 237, 233);
+    flex-basis: 75%;
+    margin-left: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card{
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    width: 250px;
+    cursor: pointer;
+    transition: tranform 0.2s;
+    
+}
+.card:hover{
+    transform: scale(1.05);
+}
+h3{
+    color: #333;
+
+}
+p{
+    color: #666;
 }

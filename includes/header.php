@@ -30,21 +30,14 @@
     <div class="header">
         <div class="logo">My Library</div>
         <div class="nav">
-            <ul>
-                <li> <a href="#">Home</a></li>
-                <li> <a href="#">Books</a></li>
-                <li> <a href="#">Users</a></li>
-                <li> <a href="#">MyProfile</a></li>
-            </ul>
-            <div class="login">
-                <?php
-                    if(isset($_SESSION['admin_id']) || isset($_SESSION['user_id'])){
-                        echo '<a href="../admin/logout.php">Logout</a>';
-                    } else {
-                        echo '<a href="user/login.php">Login</a>';
-                    }
-                ?>
-            </div>
+            <?php
+                if(isset($_SESSION['admin_id']) || isset($_SESSION['user_id'])){
+                    echo '<a href="../admin/logout.php">My Profile</a>';
+                    echo '<a href="../admin/logout.php">Logout</a>';
+                } else {
+                    echo '<a href="user/login.php">Login</a>';
+                }
+            ?>
         </div>      
     </div>
     <div class="container">

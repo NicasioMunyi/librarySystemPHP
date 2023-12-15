@@ -1,7 +1,4 @@
 <?php
-session_start();
-
-// Check if admin is logged in
 if (!isset($_SESSION['admin_id'])) {
     header("Location: admin/adminLogin.php");
     exit();
@@ -12,7 +9,7 @@ if (!isset($_SESSION['admin_id'])) {
 
     <?php include_once("../includes/leftnav.php");?>
     <div class="main">
-        <?php include_once("../includes/dashboard.php");?>
+       <h2>User Management</h2>
     </div>
     
 <?php include_once("../includes/footer.php"); ?>
