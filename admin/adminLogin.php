@@ -81,4 +81,4 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <button type="submit">Login</button>
             </form>
         </div>
-    <?php include_once("../includes/footer.php"); ?>
+    <?php include_once("footer.php"); ?>

@@ -12,7 +12,7 @@ if (!isset($_SESSION['admin_id'])) {
 
     <?php include_once("leftnav.php");?>
     <div class="main">
-        <?php include_once("dashboard.php");?>
+        <h1>Returned Books </h1>
     </div>
     
 <?php include_once("footer.php"); ?>
