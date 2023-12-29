@@ -1,0 +1,35 @@
+.left-navbar{
+    height:98%;
+    width: 20%;
+    background-color: #333;
+    padding-top: 20px;
+    margin-top: 2px;
+    flex-basis:25%;
+
+}
+
+.left-navbar ul{
+    list-style: none;
+    padding: 0;
+
+}
+.left-navbar li{
+    padding:  10px;
+
+}
+.left-navbar a{
+    border-radius: 5px;
+    width: 90%;
+    background-color:#554f4f;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    display: block;
+    transition: color 0.3s ease;
+    padding: 5px;
+    text-align: center;
+}
+.left-navbar a:hover{
+    background-color: antiquewhite;
+    color: #4caf50;
+}
