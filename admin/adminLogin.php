@@ -5,7 +5,7 @@ session_start();
 include_once("../database/config.php");
 
 // Check if admin is already logged in
-if(isset($_SESSION['admin_id'])){
+if(isset($_SESSION['admin_id'])){ 
     header("Location: index.php");
     exit();
 }
@@ -29,7 +29,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             $stmt->bind_result($AdminID, $storedPassword);
             $stmt->fetch();
 
-            // Verify password (assuming plain text)
+            // Verify password (assuming plain text)/ not encypted
+            
             if($password == $storedPassword){
                 $_SESSION['admin_id'] = $AdminID;
                 header("Location: index.php");
@@ -51,9 +52,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/index.css">
-    <link rel="stylesheet" href="../assets/css/form.css">
-    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/admincss/index.css">
+    <link rel="stylesheet" href="../assets/admincss/form.css">
+    <link rel="stylesheet" href="../assets/admincss/footer.css">
 
     <title>Admin Login</title>
 </head>
@@ -79,5 +80,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
                 <button type="submit">Login</button>
             </form>
+
+
         </div>
     <?php include_once("footer.php"); ?>
